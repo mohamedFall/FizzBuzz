@@ -14,3 +14,7 @@ class FizzbuzzTest(unittest.TestCase):
     def test_should_be_fizz_when_number_multiple_of_3(self):
         actual = FizzbuzzChecker.fizzbuzz(9)
         self.assertEqual(actual, "fizz")
+
+    def test_should_be_buzz_when_number_multiple_of_5(self):
+        actual = FizzbuzzChecker.fizzbuzz(25)
+        self.assertEqual(actual, "buzz")
